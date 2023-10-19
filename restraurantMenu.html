@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next.Food- Menu</title>
+    
+    <link rel="icon" href="img/logo.jpeg" type="icon">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <style>
+        body{
+            background-image: url(img/back1.png);
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items:center;
+            flex-direction: column;
+            min-width: 500px;
+            background-color: black ;
+        }
+        #menuHead{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding:4px;
+        }
+        #menuHead h2{
+            font-size: 2em;
+            color: rgb(255, 255, 255);
+            padding: 4px;
+            gap: 40px;
+
+        }
+        #menuHead img{
+            width: 35px;
+            height: 35px;
+            border-radius: 2px;
+            margin-right: 20px;
+        }
+        table{
+            color: rgb(0, 0, 0);
+            margin: 10px;
+            border-collapse: collapse;
+            background-color: rgba(224, 225, 231, 0.897);
+        }
+        table,td,th{
+            border: 1px solid rgba(143, 143, 143, 0.226);
+        }
+        th,td{
+            padding: 5px;
+            text-align: center;
+            width: 150px;
+        }
+
+        th{
+            font-weight: 800;
+        }
+        thead{
+            background-color: rgb(36, 36, 36);
+            color: white;
+
+        }
+
+        td img{
+            width: 200px ;
+        }
+
+        #info{
+            color: white;
+        }
+        #subHead{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 80%;
+        }
+        #closeBtn{
+            color: rgb(255, 255, 255);
+            background-color: rgb(36, 36, 36);
+            border-radius: 5px;
+            padding: 8px;
+            border: 1px solid rgb(82, 82, 82);
+            font-size:medium;
+            font-weight: 550;
+            cursor: pointer;
+        }
+        #closeBtn:hover{
+            background-color: rgb(0, 0, 0);
+            border: 1px solid rgb(255, 255, 255);
+            font-size: 101%;
+        }
+    </style>
+</head>
+<body>
+    <div id="menuHead">
+        <img src="img/logo.jpeg" alt="logo">
+    
+        <h2>Next.Food</h2>
+    </div>
+    <div id="subHead">
+        <h2 id="info">Food Menu</h2>
+        <button id="closeBtn" type="button" onclick="closeWindow">Close Menu</button>
+    </div>
+    <script>
+        document.getElementById('closeBtn').addEventListener('click', function () {
+    window.close();});
+    </script>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Breakfast</th>
+                <th colspan="2">Main Course</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Parantha (Onion, Cheese, Potato) </td>
+                <td>&#8377 40</td>
+                <td>Special Thali (Chapati, rice, paneer sabji, dal makhani, ..)</td>
+                <td>&#8377 100</td>
+            </tr>
+            <tr>
+                <td>Bread - Omlet </td>
+                <td>&#8377 40</td>
+                <td>Normal Thali (Chapati, rice, seasonal veg, dal )</td>
+                <td>&#8377 80</td>
+            </tr>
+            <tr>
+                <td>Sandwich </td>
+                <td>&#8377 30</td>
+                <td>Day Special</td>
+                <td>&#8377 120</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="2">Rice</th>
+                <th colspan="2">Vegetables</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Plane Rice (half - full)</td>
+                <td>&#8377 40 - 70 </td>
+                <td>Paneer</td>
+                <td>&#8377 40</td>
+            </tr>
+
+            <tr>
+                <td>Fried Rice (half - full)</td>
+                <td>&#8377 50 - 90 </td>
+                <td>Seasonal Veg</td>
+                <td>&#8377 40</td>
+            </tr>
+
+            <tr>
+                <td>Jira Rice (half - full)</td>
+                <td>&#8377 45 - 80 </td>
+                <td>White Chana</td>
+                <td>&#8377 35</td>
+            </tr>
+           
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="2">Beverages</th>
+                <th colspan="2">Desserts</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cold drink (300ml) (Cocacola, Pepsi, Mountani Due)</td>
+                <td>&#8377 20</td>
+                <td>Icecream (100gm)</td>
+                <td>&#8377 30</td> 
+            </tr>
+            <tr>
+                <td>Lemon Soda (250ml)</td>
+                <td>&#8377 25</td> 
+                <td>Gulab Jamun, Rasogulla, balusahi</td>
+                <td>&#8377 20</td>
+            </tr>
+            <tr>
+                <td>Fruit Juice (300ml)</td>
+                <td>&#8377 40</td> 
+                <td>Puddings</td>
+                <td>&#8377 30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">For special cooking instruction, feel free to say.</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

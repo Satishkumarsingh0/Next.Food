@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next.Food</title>
+    <link rel="icon" href="img/logo.jpeg" type="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link rel="stylesheet" href="index.css" type="text/css">
+    <style>
+        
+        body{
+            min-height: 500px;
+            min-width: 500px;
+            background-color: rgba(0, 0, 0, 0.719);
+            min-width:650px;
+        }
+        i{
+            padding-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heads">
+        <nav>
+            <div id="head1">
+                <img src="img/logo-removebg-preview.png" alt="logo">
+                <h1 id="logo">Next.Food</h1>
+            </div>
+            <div id="head2">
+                <a href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i>About</a>
+                <a href="javascript:void(0);" id="viewMenuLink"> <i class="fa fa-file-text" aria-hidden="true"></i>View Menu</a>
+                <a href="#order"><i class="fa fa-cutlery" aria-hidden="true"></i>Place Order Online</a>
+                <a href="#contact"> <i class="fa fa-address-card" aria-hidden="true"></i>Contacts</a>
+            </div>
+           
+        </nav>
+        <div id="back2">
+            <h1>Next.Food Center</h1>
+            <h2 id="tagline">Where every flavor tells a story!</h2>
+        </div>
+    </div>
+    <div id="special">
+        <h1>Day Special Meal:</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="img/eggbiryani.jpeg" alt="egg biryani">
+                <h2>Egg Biryani</h2>
+                <p>&#8377 80-150</p>
+            </div>
+            <div class="card">
+                <img src="img/butterchicken.jpeg" alt="butter chicken">
+                <h2>Butter Roti & <br> Chicken Masala</h2>
+                <p>&#8377 120-200</p>
+            </div>
+            <div class="card">
+                <img src="img/southveg.jpeg" alt="south indian veg">
+                <h2>South Indian <br> Veg Thali</h2>
+                <p>&#8377 150</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="Js/index.js"></script>
+    <div id="order">
+        <h1>Place Order Online</h1>
+        <form action="#">
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" minlength="3" maxlength="40" placeholder="John Doe" required>
+            </div>
+            <div>
+                <label for="name">Phone No.:</label>
+                <input type="number" minlength="10" maxlength="10" placeholder="0123456789" required>
+            </div>
+            <div>
+                <label for="mail">Mail:</label>
+                <input type="email" name="mail" placeholder="abc@gmail.com" size="26" >
+            </div>
+            <div id="addr">
+                <div>
+                    <label for="address">Address:</label>
+                </div>
+                <div>
+                    <label for="address">H.No.:</label>
+                    <input type="text" name="address" size="6" required>
+                </div>
+                <div>
+                    <label for="address">Street No.:</label>
+                    <input type="text" name="address" size="2" required>
+                </div>
+                <div>
+                    <label for="address"> Landmark:</label>
+                    <input type="text" name="address" size="21" required>
+                </div>
+                <div>
+                    <label for="address">Town/Village:</label>
+                    <select name="address" id="town" required>
+                        <option value="none" selected>-select-</option>
+                        <option value="Mehru">Mehru</option>
+                        <option value="Lawgate">Lawgate</option>
+                        <option value="Hardaspur">Hardaspur</option>
+                        <option value="DeepNagar">DeepNagar</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="fooditem">Food Items:</label>
+                <textarea type="text" name="fooditem" id="fooditem" placeholder="Enter food items" rows="3" cols="25"></textarea>
+            
+            </div>
+            <div id="subdiv">
+                <button type="submit" id="submt">Place order</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="about">
+        <h1>About Us</h1>
+        <div id="aboutContent">
+                <p>
+                    <img src="img/building.jpg" alt="outer image" id="building">
+
+                    Welcome to Next.Food
+                    <br><br> We're passionate about good food and great experiences. We're more than just a restaurant; we're a place where flavors come to life. Our menu is a blend of fresh ingredients and global inspirations, all served with a smile.
+
+                    Our team of chefs and staff is here to make your visit special. Whether you're a food lover or just looking for a delicious meal, we've got something for everyone.
+                    <br><br> At Next.Food, we believe in the magic of good food to bring people together.
+
+                    Join us for a meal and discover what's next in the world of food. 
+                    <br>We look forward to serving you! 
+
+                </p>
+        </div>
+    </div>
+    <div id="top">
+        <button onclick="topFunction()" id="goTopBtn" title="Go to top">Go to top</button>
+    </div>
+    <div id="contact">
+        <div>
+            <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Address</h3>
+            <p>
+                
+                Next.Food Restaurent
+                <br>
+                123, Delicious Apartment
+                <br>
+                Mehru, Jalandhar
+                <br>
+                Punjab
+            </p>
+        </div>
+        <div>
+            <h3><i class="fa fa-address-book" aria-hidden="true"></i>Mail & Phone</h3>
+            <div id="conts">
+                <a href="tel:+918757073613">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    +91-0123456789</a>
+                <a href="mailto:satishsingh8757gmail.com">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    next.food@gmail.com
+                </a>
+            </div>
+        </div>
+        <div>
+            <h3><i class="fa fa-clock-o" aria-hidden="true"></i>Timings</h3>
+            <div>
+                <p>Mon-Fri: 12PM-10PM</p>
+                <p>Sat-Sun: 10AM-11PM</p>
+            </div>
+        </div>
+    </div>
+    <div id="cpy">
+        <p>&copy; 2023 Next.Food Restaurant. All rights reserved.</p>
+    </div>
+</body>
+</html>
